@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kimba Lodge — Contact</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contact-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><img src="images/kimba-logo.jpg" alt="Kimba Lodge logo" class="site-logo"></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Removed duplicate modal JS logic to prevent null errors; modal logic is handled above. -->
+  <!-- Removed duplicate modal JS logic to prevent null errors. WhatsApp booking logic is handled in the main modal script above. -->
+
+  <div class="contact-top-row">
+    <section class="contact-details">
+      <h2 class="contact-title">Contact Us</h2>
+      <div class="contact-info">
+        <div><strong>Email:</strong> <a href="mailto:info@kimbalodge.co.za"
+            class="contact-green">info@kimbalodge.co.za</a></div>
+        <div><strong>WhatsApp:</strong> <a href="https://wa.me/27849091777" target="_blank" rel="noopener"
+            class="contact-green">+27 84 909 1777</a></div>
+        <div><strong>Phone:</strong> <a href="tel:+27849091777" class="contact-green">+27 84 909 1777</a></div>
+      </div>
+    </section>
+    <div class="contact-actions">
+      <button id="bookNowBtn" class="btn" aria-label="Open booking form">Book Now</button>
+    </div>
+  </div>
+  <section class="contact-map">
+    <h2 class="contact-map-title">Find Us</h2>
+    <div class="contact-map-container">
+      <iframe src="https://www.google.com/maps?q=33+Molengraafff+Street,+Phalaborwa&output=embed" width="100%"
+        height="350" class="contact-map-iframe" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Kimba Lodge Location on Google Maps"
+        aria-label="Kimba Lodge location on Google Maps"></iframe>
+    </div>
+  </section>
+
+
+  <div id="bookingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-content contact-modal-content">
+      <button id="closeModalBtn" class="close-modal-btn" aria-label="Close booking form" tabindex="0">&times;</button>
+      <h2 id="bookingModalTitle">Book Your Stay</h2>
+      <form id="bookingForm" aria-label="Booking form" autocomplete="on">
+        <label for="roomSelect">Room(s): <span aria-hidden="true" class="required-asterisk">*</span></label>
+        <span id="roomHelp" class="room-help">Hold Ctrl (Windows) or Command (Mac) to select multiple rooms.</span>
+        <select id="roomSelect" name="room" multiple size="5" class="room-select" aria-describedby="roomHelp"
+          aria-required="true" required>
+          <option value="Elephant Room">Elephant Room</option>
+          <option value="Lion & Cubs Suite">Lion & Cubs Suite</option>
+          <option value="Zebra Room">Zebra Room</option>
+          <option value="Baobab Cottage">Baobab Cottage</option>
+          <option value="Victorian Cottage">Victorian Cottage</option>
+        </select>
+        <label for="checkin">Check-in: <span aria-hidden="true" class="required-asterisk">*</span></label>
+        <input type="date" id="checkin" name="checkin" required aria-required="true" class="modal-input"
+          aria-label="Check-in date"><br>
+        <label for="checkout">Check-out: <span aria-hidden="true" class="required-asterisk">*</span></label>
+        <input type="date" id="checkout" name="checkout" required aria-required="true" class="modal-input"
+          aria-label="Check-out date"><br>
+        <button type="submit" class="btn whatsapp-btn" aria-label="Send booking via WhatsApp">Send via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+  </section>
+  </main>
+  <!-- Modal and WhatsApp booking logic -->
+  <script>
+    // Unified modal accessibility and WhatsApp booking logic
+    (function () {
+      const modal = document.getElementById('bookingModal');
+      const openBtn = document.getElementById('bookNowBtn');
+      const closeBtn = document.getElementById('closeModalBtn');
+      const firstInput = document.getElementById('roomSelect');
+      // Open modal
+      function openModal() {
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden', 'false');
+        setTimeout(() => { firstInput && firstInput.focus(); }, 100);
+      }
+      // Close modal
+      function closeModal() {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        openBtn && openBtn.focus();
+      }
+      openBtn && openBtn.addEventListener('click', openModal);
+      closeBtn && closeBtn.addEventListener('click', closeModal);
+      document.addEventListener('keydown', function (e) {
+        if (modal.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) closeModal();
+        // Trap focus inside modal
+        if (modal.style.display === 'flex' && e.key === 'Tab') {
+          const focusable = Array.from(modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'));
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+          else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+        }
+      });
+      modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+      // WhatsApp booking logic
+      document.getElementById('bookingForm').onsubmit = function (e) {
+        e.preventDefault();
+        const selectedRooms = Array.from(document.getElementById('roomSelect').selectedOptions).map(opt => opt.value).join(', ');
+        const checkin = document.getElementById('checkin').value;
+        const checkout = document.getElementById('checkout').value;
+        if (!selectedRooms || !checkin || !checkout) {
+          alert('Please select room(s) and dates.');
+          return;
+        }
+        const msg = encodeURIComponent(`Booking request for Kimba Lodge:%0ARoom(s): ${selectedRooms}%0ACheck-in: ${checkin}%0ACheck-out: ${checkout}`);
+        const waUrl = `https://wa.me/27849091777?text=${msg}`;
+        window.open(waUrl, '_blank');
+        closeModal();
+      };
+    })();
