@@ -1,0 +1,1431 @@
+/* Activities page: black main nav links */
+.activities-page .main-nav a {
+  color: #111 !important;
+}
+
+/* Activities page: black links */
+.activities-page a {
+  color: #111 !important;
+}
+
+body.activities-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.boma-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.childrens-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.pool-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.lounge-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.conference-page {
+  background-image: url('../images/ships1.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.baobab-page {
+  background-image: url('../images/baobabtree.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.zebra-page {
+  background-image: url('../images/zebra-skin-pattern.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.home-header,
+body.home-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.rooms-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+body.contact-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+/* Contact Page Layout and Modal Styles */
+.contact-top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+  margin: 2em 0 1.5em 0;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  text-align: left;
+  margin: 0;
+  min-width: 220px;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.contact-info {
+  font-size: 1.1em;
+  line-height: 2;
+  max-width: 400px;
+  margin: 0;
+}
+
+.contact-green {
+  color: #25D366;
+}
+
+.contact-actions {
+  text-align: center;
+  margin: 0;
+}
+
+.contact-map {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.contact-map-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.contact-map-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: transparent !important;
+}
+
+.contact-map-iframe {
+  border: 0;
+  border-radius: 10px;
+  background: transparent !important;
+}
+
+.contact-modal-content {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Booking Modal and Button Styles for Rooms Page */
+.book-btn {
+  margin: 2em auto;
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal[style*="display: flex"],
+.modal.active {
+  display: flex !important;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2em 1.5em;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  color: #222;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.required-asterisk {
+  color: var(--swazi-red);
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.room-help {
+  display: block;
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 0.5em;
+}
+
+.room-select {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.modal-input {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.whatsapp-btn {
+  width: 100%;
+  background: #25D366;
+  color: #fff;
+}
+
+/* Swimming Pool image placeholder styling */
+.pool-image-placeholder {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+/* Zebra Room main content layout */
+.zebra-main {
+  padding: 40px 0;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Zebra Room content box styling */
+.zebra-box {
+  background: rgba(0, 0, 0, 0.88);
+  padding: 24px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.contact-page #bookNowBtn {
+  background: linear-gradient(135deg, #e2b07a 60%, #b97a56 100%) !important;
+  color: #3d2b1f !important;
+  border: 3px solid #8d5524 !important;
+  outline: 2px solid #8d5524 !important;
+  outline-offset: 2px !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 #fff8, 0 2px 4px #0002;
+  box-shadow: 0 4px 18px rgba(61, 43, 31, 0.18), 0 1.5px 0 #fff4 inset;
+  border-radius: 16px !important;
+  padding: 16px 38px !important;
+  font-size: 1.25em !important;
+  margin: 2em auto !important;
+  display: block;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.contact-page #bookNowBtn:hover,
+.contact-page #bookNowBtn:focus {
+  background: repeating-linear-gradient(135deg, #e2b07a 0 20px, #b97a56 20px 40px) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 32px rgba(61, 43, 31, 0.28), 0 1.5px 0 #fff4 inset;
+  outline: 2px solid #8d5524;
+}
+
+/* Strong override for Book Now button and contact details transparency on contact page */
+.contact-page #bookNowBtn,
+/* Consolidated transparency for contact page elements */
+.contact-page #bookNowBtn,
+.contact-page .contact-details,
+.contact-page .contact-details>div,
+.contact-page .contact-actions,
+.contact-page .contact-map,
+.contact-page .contact-map>div {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.contact-page iframe {
+  background: transparent !important;
+}
+
+/* Kimba Lodge — Centralized styles (Swazi-inspired dark theme) */
+:root {
+  --primary-orange: #ff8c00;
+}
+
+* {
+  box-sizing: border-box
+}
+
+div {
+  border: none;
+  border-image: none
+}
+
+*::before,
+*::after {
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  border-image: none
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.zebra-page *:not(.zebra-box):not(.zebra-box *) {
+  background: none !important;
+  background-color: transparent !important
+}
+
+a {
+  color: var(--primary-orange)
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 18px;
+  border: none !important;
+  box-shadow: none !important
+}
+
+/* Header / Navigation */
+.site-header {
+  padding: 6px 0;
+  background: transparent !important
+}
+
+.site-header .logo {
+  color: var(--primary-orange);
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center
+}
+
+/* Ensure the image logo centers inside the anchor */
+.site-logo {
+  display: block;
+  margin: 0 auto
+}
+
+.site-header .wrap {
+  position: relative
+}
+
+
+
+/* Social links (top-right) */
+.site-header .social-links {
+  position: absolute;
+  right: 28px;
+  top: 160px;
+  display: flex;
+  gap: 18px;
+  z-index: 10;
+  align-items: center
+}
+
+.site-header .social-links a {
+  color: #fff !important;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  transition: transform .15s ease, filter .15s ease
+}
+
+.site-header .social-links a.facebook {
+  background: #1877F2
+}
+
+.site-header .social-links a.instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%)
+}
+
+.site-header .social-links .icon {
+  display: block;
+  color: #fff;
+  opacity: 1;
+  width: 32px;
+  height: 32px
+}
+
+.site-header .social-links a:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05)
+}
+
+/* Homepage-specific header */
+.home-header .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.home-header .logo {
+  font-size: 40px
+}
+
+.home-header .main-nav {
+  margin-top: 10px
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.main-nav a {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: underline;
+  font-weight: 600
+}
+
+.main-nav a.active {
+  color: var(--swazi-orange);
+  text-decoration: underline
+}
+
+/* Zebra page: center nav under logo */
+.zebra-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.zebra-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem
+}
+
+/* Home page: black background */
+.home-page .hero {
+  background: transparent !important
+}
+
+.home-page .hero p {
+  text-align: center
+}
+
+.home-page .card {
+  background: transparent !important
+}
+
+.card {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.home-page .intro,
+.home-page .features,
+.home-page .wrap {
+  background: transparent !important
+}
+
+.home-page *:not(body):not(html) {
+  background-image: none !important
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page p,
+.home-page li,
+.home-page a {
+  color: #000 !important
+}
+
+.home-page .main-nav {
+  margin-top: 20px
+}
+
+.home-page .main-nav a {
+  font-size: 1.375rem
+}
+
+/* Rooms page: black background and centered text */
+.rooms-page h1,
+.rooms-page h2,
+.rooms-page h3,
+.rooms-page p,
+.rooms-page li,
+.rooms-page a {
+  text-align: center;
+  color: #000 !important
+}
+
+.rooms-page .site-footer {
+  text-align: center
+}
+
+.rooms-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.rooms-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem
+}
+
+.rooms-page .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px
+}
+
+.rooms-page .card {
+  max-width: 280px;
+  width: 280px
+}
+
+/* Elephant room: center text and links */
+body.elephant-page {
+  background-image: url('../images/elephantskin.jpg');
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000
+}
+
+.elephant-page h1,
+.elephant-page h2,
+.elephant-page h3,
+.elephant-page p {
+  text-align: center;
+  color: #fff !important
+}
+
+.elephant-page main {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+.elephant-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.elephant-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem;
+  color: #fff !important
+}
+
+/* Lion room: center text and links, black text, constrained width */
+body.lion-page {
+  background-image: url('../images/lion-background.jpg');
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000
+}
+
+.lion-page h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff !important
+}
+
+.lion-page h2,
+.lion-page h3,
+.lion-page p,
+.lion-page li,
+.lion-page a {
+  text-align: center;
+  color: #fff !important;
+  font-size: 1.125rem
+}
+
+.lion-page main {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+.lion-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.lion-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem;
+  color: #fff !important
+}
+
+/* Baobab cottage: center text and links, black text, script font, constrained width */
+.baobab-page h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff !important
+}
+
+.baobab-page h2,
+.baobab-page h3,
+.baobab-page p,
+.baobab-page li,
+.baobab-page a {
+  text-align: center;
+  color: #fff !important;
+  font-size: 1.125rem
+}
+
+.baobab-page main {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+.baobab-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.baobab-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem;
+  color: #fff !important
+}
+
+/* Facilities page: center text and links, white text in black box */
+
+body.facilities-page {
+  background-image: url('../images/african-2.webp');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.facilities-page h1,
+.facilities-page h2,
+.facilities-page h3,
+.facilities-page p {
+  text-align: center;
+  color: #fff !important
+}
+
+.facilities-page main {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+.facilities-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.facilities-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem;
+  color: #000 !important
+}
+
+.facilities-page img,
+.facilities-page figure {
+  display: block;
+  margin: 0 auto
+}
+
+/* Lounge, Swimming Pool, Boma, Conference Room pages: shared styles */
+.conference-page a {
+  color: #000 !important
+}
+
+.lounge-page h1,
+.lounge-page h2,
+.lounge-page h3,
+.lounge-page p,
+.pool-page h1,
+.pool-page h2,
+.pool-page h3,
+.pool-page p,
+.boma-page h1,
+.boma-page h2,
+.boma-page h3,
+.boma-page p,
+.conference-page h1,
+.conference-page h2,
+.conference-page h3,
+.conference-page p,
+.childrens-page h1,
+.childrens-page h2,
+.childrens-page h3,
+.childrens-page p,
+.activities-page h1,
+.activities-page h2,
+.activities-page h3,
+.activities-page p,
+.contact-page h1,
+.contact-page h2,
+.contact-page h3,
+.contact-page p {
+  text-align: center;
+  color: #fff !important
+}
+
+.lounge-page h1,
+.lounge-page h2,
+.lounge-page h3,
+.lounge-page p,
+.pool-page h1,
+.pool-page h2,
+.pool-page h3,
+.pool-page p,
+.boma-page h1,
+.boma-page h2,
+.boma-page h3,
+.boma-page p,
+.conference-page h1,
+.conference-page h2,
+.conference-page h3,
+.conference-page p,
+.childrens-page h1,
+.childrens-page h2,
+.childrens-page h3,
+.childrens-page p,
+.activities-page h1,
+.activities-page h2,
+.activities-page h3,
+.activities-page p {
+  text-align: center;
+  color: #fff !important
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3,
+.contact-page p,
+.contact-page li,
+.contact-page a,
+.contact-page label,
+.contact-page span,
+.contact-page input,
+.contact-page select,
+.contact-page button,
+.contact-page strong,
+.contact-page div,
+.contact-page form {
+  color: #000 !important;
+}
+
+.lounge-page main,
+.pool-page main,
+.boma-page main,
+.conference-page main,
+.childrens-page main,
+.activities-page main,
+.contact-page main {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+/* Ensure all images inside main are contained */
+main img,
+main .pool-image-placeholder {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
+.lounge-page .main-nav,
+.pool-page .main-nav,
+.boma-page .main-nav,
+.conference-page .main-nav,
+.childrens-page .main-nav,
+.activities-page .main-nav,
+.contact-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.lounge-page .main-nav a,
+.pool-page .main-nav a,
+.boma-page .main-nav a,
+.conference-page .main-nav a,
+.childrens-page .main-nav a,
+.activities-page .main-nav a,
+.contact-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem;
+  color: #fff !important
+}
+
+/* Activities page: force black main nav links */
+.activities-page .main-nav a {
+  color: #111 !important;
+}
+
+.contact-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem;
+  color: #000 !important
+}
+
+.conference-page .main-nav a {
+  color: #000 !important
+}
+
+.lounge-page img,
+.lounge-page figure,
+.pool-page img,
+.pool-page figure,
+.boma-page img,
+.boma-page figure,
+.conference-page img,
+.conference-page figure,
+.childrens-page img,
+.childrens-page figure,
+.activities-page img,
+.activities-page figure,
+.contact-page img,
+.contact-page figure {
+  display: block;
+  margin: 0 auto
+}
+
+/* Victorian page: center nav and content */
+.victorian-page .main-nav {
+  justify-content: center;
+  margin-top: 20px
+}
+
+.victorian-page .main-nav a {
+  margin: 0 12px;
+  font-size: 1.375rem
+}
+
+.victorian-page h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  text-align: center
+}
+
+.victorian-page p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.875rem;
+  text-align: center
+}
+
+.victorian-page main {
+  max-width: 950px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+body.victorian-page {
+  background-image: url('../images/victorian-pattern.jpg');
+  background-repeat: repeat;
+  background-size: 340px 340px;
+  background-attachment: fixed;
+  background-color: #2d2320;
+  position: relative;
+}
+
+body.victorian-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.28);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body.victorian-page>* {
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: #fff;
+  margin: 0 0 12px;
+  text-align: center;
+  font-family: 'Playfair Display', serif
+}
+
+p,
+li,
+a {
+  color: #fff
+}
+
+.lead {
+  color: rgba(255, 255, 255, 0.85)
+}
+
+
+.room-details {
+  background: transparent;
+  padding: 16px;
+  margin: 20px 0;
+  text-align: center
+}
+
+.room-details h2 {
+  margin-top: 0
+}
+
+.room-details ul {
+  padding-left: 0;
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left
+}
+
+main {
+  border: none !important;
+  box-shadow: none !important
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin: 18px 0
+}
+
+.gallery a {
+  display: block;
+  width: 280px;
+  height: 280px
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block
+}
+
+/* Zebra room: center heading and buttons */
+.zebra-box h1,
+.zebra-box h2 {
+  text-align: center
+}
+
+.zebra-box a.btn,
+.zebra-box button.btn {
+  display: block;
+  width: fit-content;
+  margin: 10px auto
+}
+
+/* Script font for homepage hero title */
+.hero h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.2rem
+}
+
+/* Hero */
+.hero {
+  padding: 40px 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0));
+  border-radius: 4px
+}
+
+.btn {
+  background: var(--swazi-red);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none
+}
+
+.btn.alt {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12)
+}
+
+/* Ensure Book Now button is visible and centered */
+#bookNowBtn {
+  display: block;
+  margin: 2em auto;
+  font-size: 1.2em;
+  background: var(--swazi-red);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s;
+}
+
+#bookNowBtn:hover,
+#bookNowBtn:focus {
+  background: var(--swazi-orange);
+  color: #fff;
+}
+
+/* Modal styles for booking */
+#bookingModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+#bookingModal.active {
+  display: flex !important;
+}
+
+#bookingModal>div {
+  background: #fff;
+  color: #222;
+  padding: 2em 1.5em;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+}
+
+#bookingModal h2 {
+  color: #222;
+  margin-top: 0;
+  text-align: center;
+}
+
+#bookingModal label {
+  color: #222;
+  font-weight: 600;
+}
+
+#bookingModal input,
+#bookingModal select {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#bookingModal button[type="submit"] {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#closeModalBtn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Cards / Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px
+}
+
+.features .card {
+  background: transparent !important;
+  padding: 18px;
+  border-radius: 6px;
+  border: none !important;
+  box-shadow: none !important
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 22px;
+  padding: 10px 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important
+}
+
+.site-footer p {
+  opacity: 0.92;
+  color: rgba(255, 255, 255, 0.95)
+}
+
+/* Contact details */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.contact-list li {
+  margin-bottom: 8px
+}
+
+.contact-list a {
+  color: var(--swazi-orange);
+  text-decoration: none
+}
+
+/* Focus & accessibility */
+a:focus,
+.btn:focus,
+.main-nav a:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: 3px solid var(--swazi-orange);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.btn.alt {
+  background: transparent;
+  border: 1px solid rgba(255, 140, 0, 0.18);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 4px rgba(255, 140, 0, 0.12);
+}
+
+/* Skip link (visible on focus) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: var(--swazi-orange);
+  color: #000;
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+/* Ethnic accent pattern for section headings */
+.section-accent {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background-image: linear-gradient(90deg, var(--swazi-green), var(--swazi-blue), var(--swazi-red), var(--swazi-orange)), url('../images/swazi-pattern.svg');
+  background-size: auto, 40px 40px;
+  background-repeat: no-repeat, repeat;
+  padding-left: 16px;
+  color: #fff;
+  margin-bottom: 12px;
+  font-weight: 700;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Lead paragraph */
+.lead {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+}
+
+/* Responsive images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.hero-figure img {
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+/* Lightbox gallery */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 84%;
+  border-radius: 6px;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox .lb-close,
+.lightbox .lb-prev,
+.lightbox .lb-next {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lightbox .lb-close {
+  right: 18px;
+  top: 18px;
+}
+
+.lightbox .lb-prev {
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+}
+
+.lightbox .lb-next {
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+}
+
+.lightbox .lb-caption {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 26px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width:700px) {
+  .lightbox img {
+    max-width: 94%;
+    max-height: 70%;
+  }
+
+  .lightbox .lb-prev,
+  .lightbox .lb-next {
+    display: none;
+  }
+
+  .card img {
+    border-radius: 6px;
+  }
+
+  .section-accent {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width:700px) {
+  .site-header .logo {
+    font-size: 20px;
+  }
+
+  .site-header .wrap:after {
+    display: none;
+  }
+
+  .site-header .social-links {
+    top: 180px;
+    right: 12px;
+    gap: 16px;
+  }
+
+  .site-header .social-links a {
+    width: 52px;
+    height: 52px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .section-accent {
+    padding: 6px 10px;
+  }
+}
+
+/* Accessibility Additions */
+/* Required field indicator */
+label span[aria-hidden="true"] {
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

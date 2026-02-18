@@ -1,0 +1,110 @@
+/* Backup of styles.css */
+/* Kimba Lodge — Centralized styles (Swazi-inspired dark theme) */
+:root{
+  --swazi-red:#d73027;
+  --swazi-blue:#1e4f8a;
+  --swazi-green:#0b6d3f;
+  --swazi-orange:#ff8c00;
+  --swazi-white:#ffffff;
+}
+*{box-sizing:border-box}
+a,body,html{height:100%}
+html,body{margin:0;background:#000;color:#fff;font-family: 'Montserrat', sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--swazi-orange)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px} 
+
+/* Center main textual content site-wide */
+body, main, .wrap, .features .card, .site-footer, .site-header { text-align: center; }
+
+
+/* Framing + Swazi-style border */
+.swazi-frame{max-width:1200px;margin:20px auto;padding:36px;background:linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.95));box-shadow: 0 8px 30px rgba(0,0,0,0.6);border-radius:10px;position:relative;overflow:visible;border:22px solid transparent;border-image: url('../images/wood-photo.jpg') 22 round;border-image-repeat:round;background-clip:padding-box;box-shadow:0 8px 30px rgba(0,0,0,0.6), inset 0 0 0 6px rgba(0,0,0,0.18)}
+
+/* Subtle overlay to soften and blend the wood border */
+.swazi-frame::after{content:'';position:absolute;inset:-22px;border-radius:14px;pointer-events:none;background:linear-gradient(180deg, rgba(0,0,0,0.36), rgba(0,0,0,0.12));mix-blend-mode:multiply;z-index:0}
+
+/* Decorative inner trim (kept inside the wood border) */
+.swazi-frame::before{content:'';position:absolute;left:28px;right:28px;top:28px;bottom:28px;border-radius:6px;pointer-events:none;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0));box-shadow:inset 0 0 0 1px rgba(255,255,255,0.02);z-index:1} 
+
+/* Header / Navigation */
+.site-header{padding:6px 0}
+.site-header .logo{color:var(--swazi-orange);font-family:'Playfair Display', serif;font-size:28px;text-decoration:none}
+.site-header .wrap{position:relative} 
+.site-header .wrap:after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:120px;height:6px;background: repeating-linear-gradient(90deg,var(--swazi-red),var(--swazi-red) 12px,var(--swazi-blue) 12px 24px,var(--swazi-orange)24px 36px);border-radius:3px;opacity:0.9}
+
+/* Homepage-specific header */
+.home-header .wrap{display:flex;flex-direction:column;align-items:center}
+.home-header .logo{font-size:40px}
+.home-header .main-nav{margin-top:10px}  
+.main-nav{display:flex;align-items:center;justify-content:center}
+.main-nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:600}
+.main-nav a.active{color:var(--swazi-orange);text-decoration:underline} 
+
+/* Typography */
+h1,h2,h3{color:#fff;margin:0 0 12px}
+p,li,a{color:#fff}
+.lead{color:rgba(255,255,255,0.85)}
+
+/* Hero */
+.hero{padding:40px 0;background: linear-gradient( to bottom, rgba(255,255,255,0.02), rgba(0,0,0,0));border-radius:4px}
+.btn{background:var(--swazi-red);color:#fff;padding:10px 16px;border-radius:4px;text-decoration:none}
+.btn.alt{background:transparent;border:1px solid rgba(255,255,255,0.12)}
+
+/* Cards / Features */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.features .card{background:linear-gradient( to bottom, rgba(255,255,255,0.02), rgba(0,0,0,0));padding:18px;border-radius:6px;border:1px solid rgba(255,255,255,0.04)}
+
+/* Footer */
+.site-footer{margin-top:22px;padding:10px 0}
+.site-footer p{opacity:0.92;color:rgba(255,255,255,0.95)}
+
+/* Contact details */
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{margin-bottom:8px}
+.contact-list a{color:var(--swazi-orange);text-decoration:none}
+
+/* Focus & accessibility */
+a:focus, .btn:focus, .main-nav a:focus{outline:3px solid var(--swazi-orange);outline-offset:4px;border-radius:4px}
+.btn.alt{background:transparent;border:1px solid rgba(255,140,0,0.18)}
+.btn:focus{box-shadow:0 0 0 4px rgba(255,140,0,0.12)}
+
+/* Skip link (visible on focus) */
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:12px;top:12px;width:auto;height:auto;padding:8px 12px;background:var(--swazi-orange);color:#000;border-radius:4px;z-index:9999}
+
+/* Ethnic accent pattern for section headings */
+.section-accent{display:inline-block;padding:8px 14px;border-radius:12px;background-image: linear-gradient(90deg, var(--swazi-green), var(--swazi-blue), var(--swazi-red), var(--swazi-orange)), url('../images/swazi-pattern.svg');background-size: auto, 40px 40px;background-repeat: no-repeat, repeat;padding-left:16px;color:#fff;margin-bottom:12px;font-weight:700;box-shadow: 0 2px 0 rgba(0,0,0,0.3)}
+
+/* Lead paragraph */
+.lead{color:rgba(255,255,255,0.85);font-size:1.05rem}
+
+/* Responsive images */
+.responsive-img{max-width:100%;height:auto;display:block;border-radius:8px}
+.card img{width:100%;height:auto;object-fit:cover;border-radius:8px;margin-bottom:12px;cursor:pointer}
+.hero-figure img{border-radius:10px;margin-bottom:18px}
+
+/* Lightbox gallery */
+.lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.85);z-index:9999;opacity:0;pointer-events:none;transition:opacity .22s ease}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img{max-width:92%;max-height:84%;border-radius:6px;box-shadow:0 12px 50px rgba(0,0,0,0.8)}
+.lightbox .lb-close, .lightbox .lb-prev, .lightbox .lb-next{position:absolute;background:rgba(255,255,255,0.06);color:#fff;border:0;padding:10px;border-radius:6px;cursor:pointer}
+.lightbox .lb-close{right:18px;top:18px}
+.lightbox .lb-prev{left:18px;top:50%;transform:translateY(-50%);font-size:28px}
+.lightbox .lb-next{right:18px;top:50%;transform:translateY(-50%);font-size:28px}
+.lightbox .lb-caption{position:absolute;left:50%;transform:translateX(-50%);bottom:26px;color:rgba(255,255,255,0.9);font-size:14px}
+
+/* Responsiveness */
+@media (max-width:700px){
+  .lightbox img{max-width:94%;max-height:70%}
+  .lightbox .lb-prev,.lightbox .lb-next{display:none}
+  .card img{border-radius:6px}
+  .section-accent{padding:6px 8px}
+} 
+@media (max-width:700px){
+  .swazi-frame{margin:8px;padding:18px}
+  .site-header .logo{font-size:20px}
+  .site-header .wrap:after{display:none}
+  .main-nav{flex-wrap:wrap}
+  .features{grid-template-columns:1fr}
+  .section-accent{padding:6px 10px}
+}
