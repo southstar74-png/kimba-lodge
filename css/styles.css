@@ -523,7 +523,7 @@ a {
 .home-page p,
 .home-page li,
 .home-page a {
-  color: #000 !important
+  color: #fff !important
 }
 
 .home-page .main-nav {
@@ -542,7 +542,7 @@ a {
 .rooms-page li,
 .rooms-page a {
   text-align: center;
-  color: #000 !important
+  color: #fff !important
 }
 
 .rooms-page .site-footer {
@@ -567,8 +567,12 @@ a {
 }
 
 .rooms-page .card {
-  max-width: 280px;
-  width: 280px
+  max-width: 450px;
+  width: 100%
+}
+
+.rooms-page .card a {
+  text-decoration: none;
 }
 
 /* Elephant room: center text and links */
@@ -826,8 +830,9 @@ body.facilities-page {
 .boma-page main,
 .conference-page main,
 .childrens-page main,
-.activities-page main,
-.contact-page main {
+.contact-page main,
+.rooms-page main,
+.home-page main {
   max-width: 1100px;
   margin: 20px auto;
   background: rgba(0, 0, 0, 0.85);
@@ -836,11 +841,75 @@ body.facilities-page {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
 }
 
+.activities-page main {
+  max-width: 1800px;
+  width: 96vw;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4)
+}
+
+.activities-page .wrap {
+  max-width: 100%;
+}
+
+.activities-page .features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.activities-page .card {
+  border: 1px solid #ff8c00 !important;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.activities-page .card h3 {
+  text-align: center !important;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.activities-page .card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.activities-page .card-body figure {
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin: 0;
+}
+
+.activities-page .card-body figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.activities-page .card-text {
+  flex: 1;
+}
+
+.activities-page .card-text p {
+  text-align: left !important;
+  line-height: 1.7;
+}
+
 /* Ensure all images inside main are contained */
 main img,
 main .pool-image-placeholder {
   max-width: 100% !important;
   height: auto !important;
+  max-height: 600px;
+  object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
   border-radius: 8px;
@@ -1016,8 +1085,10 @@ main {
 
 .gallery a {
   display: block;
-  width: 280px;
-  height: 280px
+  flex: 1 1 calc(24% - 14px);
+  min-width: 200px;
+  max-width: 300px;
+  aspect-ratio: 4 / 3;
 }
 
 .gallery img {
@@ -1025,7 +1096,7 @@ main {
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
-  display: block
+  display: block;
 }
 
 /* Zebra room: center heading and buttons */
@@ -1279,7 +1350,7 @@ select:focus {
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -1359,6 +1430,11 @@ select:focus {
 
 /* Responsiveness */
 @media (max-width:700px) {
+  main img,
+  main .pool-image-placeholder {
+    height: 400px !important;
+  }
+
   .lightbox img {
     max-width: 94%;
     max-height: 70%;
