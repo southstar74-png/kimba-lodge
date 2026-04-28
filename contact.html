@@ -70,34 +70,33 @@
       </nav>
     </div>
   </header>
-  <!-- Removed duplicate modal JS logic to prevent null errors; modal logic is handled above. -->
-  <!-- Removed duplicate modal JS logic to prevent null errors. WhatsApp booking logic is handled in the main modal script above. -->
 
-  <div class="contact-top-row">
-    <section class="contact-details">
-      <h2 class="contact-title">Contact Us</h2>
-      <div class="contact-info">
-        <div><strong>Email:</strong> <a href="mailto:info@kimbalodge.co.za"
-            class="contact-green">info@kimbalodge.co.za</a></div>
-        <div><strong>WhatsApp:</strong> <a href="https://wa.me/27849091777" target="_blank" rel="noopener"
-            class="contact-green">+27 84 909 1777</a></div>
-        <div><strong>Phone:</strong> <a href="tel:+27849091777" class="contact-green">+27 84 909 1777</a></div>
+  <main id="main-content" class="wrap">
+    <div class="contact-top-row">
+      <section class="contact-details">
+        <h2 class="contact-title">Contact Us</h2>
+        <div class="contact-info">
+          <div><strong>Email:</strong> <a href="mailto:info@kimbalodge.co.za"
+              class="contact-green">info@kimbalodge.co.za</a></div>
+          <div><strong>WhatsApp:</strong> <a href="https://wa.me/27849091777" target="_blank" rel="noopener"
+              class="contact-green">+27 84 909 1777</a></div>
+          <div><strong>Phone:</strong> <a href="tel:+27849091777" class="contact-green">+27 84 909 1777</a></div>
+        </div>
+      </section>
+      <div class="contact-actions">
+        <button id="bookNowBtn" class="btn" aria-label="Open booking form">Book Now</button>
+      </div>
+    </div>
+    <section class="contact-map">
+      <h2 class="contact-map-title">Find Us</h2>
+      <div class="contact-map-container">
+        <iframe src="https://www.google.com/maps?q=33+Molengraafff+Street,+Phalaborwa&output=embed" width="100%"
+          height="350" class="contact-map-iframe" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Kimba Lodge Location on Google Maps"
+          aria-label="Kimba Lodge location on Google Maps"></iframe>
       </div>
     </section>
-    <div class="contact-actions">
-      <button id="bookNowBtn" class="btn" aria-label="Open booking form">Book Now</button>
-    </div>
-  </div>
-  <section class="contact-map">
-    <h2 class="contact-map-title">Find Us</h2>
-    <div class="contact-map-container">
-      <iframe src="https://www.google.com/maps?q=33+Molengraafff+Street,+Phalaborwa&output=embed" width="100%"
-        height="350" class="contact-map-iframe" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" title="Kimba Lodge Location on Google Maps"
-        aria-label="Kimba Lodge location on Google Maps"></iframe>
-    </div>
-  </section>
-
+  </main>
 
   <div id="bookingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
     <div class="modal-content contact-modal-content">
@@ -124,8 +123,6 @@
       </form>
     </div>
   </div>
-  </section>
-  </main>
   <!-- Modal and WhatsApp booking logic -->
   <script>
     // Unified modal accessibility and WhatsApp booking logic
@@ -176,3 +173,7 @@
         closeModal();
       };
     })();
+  </script>
+</body>
+
+</html>

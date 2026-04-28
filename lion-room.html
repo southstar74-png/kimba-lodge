@@ -4,11 +4,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lion Room - Kimba Lodge</title>
+  <title>Lion & Cubs Suite - Kimba Lodge</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Schema.org JSON-LD — Suite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Suite",
+    "name": "Lion & Cubs Suite",
+    "description": "Family suite at Kimba Lodge, Phalaborwa. Features two interconnected bedrooms linked by a secret wardrobe passage. King bed in Lion Room, two single beds in Cubs Room. Private lounge, en-suite bathroom, air conditioning, Wi-Fi.",
+    "url": "https://www.kimbalodge.co.za/lion-room.html",
+    "image": "https://www.kimbalodge.co.za/images/lions and cubs.jpg",
+    "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+    "bed": [
+      { "@type": "BedDetails", "typeOfBed": "King" },
+      { "@type": "BedDetails", "typeOfBed": "Twin" }
+    ],
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Secret wardrobe passage", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Minibar", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Smart TV", "value": true }
+    ],
+    "containedInPlace": { "@id": "https://www.kimbalodge.co.za/#lodge" }
+  }
+  </script>
 </head>
 
 <body class="lion-page">
@@ -30,15 +54,41 @@
   <main id="main-content">
     <h1>Lion & Cubs Suite</h1>
     <img src="images/lions and cubs.jpg" alt="Lion & Cubs Suite" class="responsive-img">
-    <p>The suite begins in the Cubs’ Room, a space alive with imagination and gentle joy. Soft colors, playful
-@@ ... @@
+
+    <p>The suite begins in the Cubs’ Room, a space alive with imagination and gentle joy. Soft colors, playful textures,
+      and a sense of wonder fill the air, creating a sanctuary where young explorers can dream of wild adventures. But
+      the true magic lies hidden in plain sight: a heavy, ornate wardrobe that stands as a silent sentinel against the
+      wall.</p>
+
+    <p>Pushing past the soft fabrics inside, a secret passage reveals itself, leading you from the innocence of the
+      Cubs’ Room into the regal splendor of the Lion Room. Here, the atmosphere shifts to one of quiet power and golden
+      warmth. Earthy tones and rich finishes echo the majesty of the king of the savannah, offering a restful retreat
+      that is both imposing and deeply comforting.</p>
+
+    <p>This interconnected haven is more than just a suite; it is a journey through a world of mystery and connection.
+      Whether you are sharing stories by the soft glow of the lamp or discovering the "secret" link between rooms, the
+      Lion & Cubs Suite invites you to embrace the bond of family and the thrill of discovery in a space designed for
+      legends of all sizes.</p>
+
+    <section class="room-details">
+      <h2>Suite Details</h2>
+      <p><strong>Capacity:</strong> Up to 4 people</p>
+      <p><strong>Includes:</strong></p>
+      <ul>
+        <li>Regal King bed in the Lion Room</li>
+        <li>Two comfortable beds in the Cubs Room</li>
+        <li>Secret interconnected wardrobe passage</li>
+        <li>Private lounge area and minibar</li>
+        <li>En-suite bathroom with premium amenities</li>
+        <li>Air conditioning and high-speed Wi-Fi</li>
+      </ul>
     </section>
+
     <section class="gallery">
-      <a href="images/lions and cubs.jpg" data-gallery="lion"><img src="images/lions and cubs.jpg"
-          alt="Lion Room photo 1"></a>
-      <a href="images/cubs.jpg" data-gallery="lion"><img src="images/cubs.jpg" alt="Cubs Room photo 2"></a>
-      <a href="images/cubs2.jpg" data-gallery="lion"><img src="images/cubs2.jpg" alt="Cubs Room photo 3"></a>
-      <a href="images/hero.webp" data-gallery="lion"><img src="images/hero.webp" alt="Lodge view photo 4"></a>
+      <a href="images/cubs2.jpg" data-gallery="lion" class="featured-image"><img src="images/cubs2.jpg" alt="Cubs Room photo 2"></a>
+      <a href="images/cubs1.jpg" data-gallery="lion"><img src="images/cubs1.jpg" alt="Lion Room photo 1"></a>
+      <a href="images/lions1.jpg" data-gallery="lion"><img src="images/lions1.jpg" alt="Cubs Room photo 3"></a>
+      <a href="images/lions2.jpg" data-gallery="lion"><img src="images/lions2.jpg" alt="Lodge view photo 4"></a>
     </section>
   </main>
 

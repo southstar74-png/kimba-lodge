@@ -1,12 +1,11 @@
-/* Activities page: black main nav links */
-.activities-page .main-nav a {
+/* .activities-page .main-nav a {
   color: #111 !important;
-}
+} */
 
 /* Activities page: black links */
-.activities-page a {
+/* .activities-page a {
   color: #111 !important;
-}
+} */
 
 body.activities-page {
   background-image: url('../images/african-2.webp');
@@ -306,9 +305,7 @@ body.contact-page {
 }
 
 /* Strong override for Book Now button and contact details transparency on contact page */
-.contact-page #bookNowBtn,
 /* Consolidated transparency for contact page elements */
-.contact-page #bookNowBtn,
 .contact-page .contact-details,
 .contact-page .contact-details>div,
 .contact-page .contact-actions,
@@ -466,7 +463,7 @@ a {
 }
 
 .main-nav a {
-  color: #fff;
+  color: #000 !important;
   margin-left: 18px;
   text-decoration: underline;
   font-weight: 600
@@ -489,17 +486,17 @@ a {
 }
 
 /* Home page: black background */
-.home-page .hero {
+/* .home-page .hero {
   background: transparent !important
-}
+} */
 
 .home-page .hero p {
   text-align: center
 }
 
-.home-page .card {
+/* .home-page .card {
   background: transparent !important
-}
+} */
 
 .card {
   background: transparent !important;
@@ -507,11 +504,11 @@ a {
   border: none !important;
 }
 
-.home-page .intro,
+/* .home-page .intro,
 .home-page .features,
 .home-page .wrap {
   background: transparent !important
-}
+} */
 
 .home-page *:not(body):not(html) {
   background-image: none !important
@@ -521,8 +518,7 @@ a {
 .home-page h2,
 .home-page h3,
 .home-page p,
-.home-page li,
-.home-page a {
+.home-page li {
   color: #fff !important
 }
 
@@ -539,8 +535,7 @@ a {
 .rooms-page h2,
 .rooms-page h3,
 .rooms-page p,
-.rooms-page li,
-.rooms-page a {
+.rooms-page li {
   text-align: center;
   color: #fff !important
 }
@@ -610,7 +605,7 @@ body.elephant-page {
 .elephant-page .main-nav a {
   margin: 0 12px;
   font-size: 1.375rem;
-  color: #fff !important
+  /* color: #fff !important */
 }
 
 /* Lion room: center text and links, black text, constrained width */
@@ -633,8 +628,7 @@ body.lion-page {
 .lion-page h2,
 .lion-page h3,
 .lion-page p,
-.lion-page li,
-.lion-page a {
+.lion-page li {
   text-align: center;
   color: #fff !important;
   font-size: 1.125rem
@@ -657,7 +651,7 @@ body.lion-page {
 .lion-page .main-nav a {
   margin: 0 12px;
   font-size: 1.375rem;
-  color: #fff !important
+  /* color: #fff !important */
 }
 
 /* Baobab cottage: center text and links, black text, script font, constrained width */
@@ -671,8 +665,7 @@ body.lion-page {
 .baobab-page h2,
 .baobab-page h3,
 .baobab-page p,
-.baobab-page li,
-.baobab-page a {
+.baobab-page li {
   text-align: center;
   color: #fff !important;
   font-size: 1.125rem
@@ -695,7 +688,7 @@ body.lion-page {
 .baobab-page .main-nav a {
   margin: 0 12px;
   font-size: 1.375rem;
-  color: #fff !important
+  /* color: #fff !important */
 }
 
 /* Facilities page: center text and links, white text in black box */
@@ -734,7 +727,7 @@ body.facilities-page {
 .facilities-page .main-nav a {
   margin: 0 12px;
   font-size: 1.375rem;
-  color: #000 !important
+  /* color: #000 !important */
 }
 
 .facilities-page img,
@@ -808,22 +801,7 @@ body.facilities-page {
   color: #fff !important
 }
 
-.contact-page h1,
-.contact-page h2,
-.contact-page h3,
-.contact-page p,
-.contact-page li,
-.contact-page a,
-.contact-page label,
-.contact-page span,
-.contact-page input,
-.contact-page select,
-.contact-page button,
-.contact-page strong,
-.contact-page div,
-.contact-page form {
-  color: #000 !important;
-}
+
 
 .lounge-page main,
 .pool-page main,
@@ -935,22 +913,21 @@ main .pool-image-placeholder {
 .contact-page .main-nav a {
   margin: 0 12px;
   font-size: 1.375rem;
-  color: #fff !important
+  /* color: #fff !important */
 }
 
-/* Activities page: force black main nav links */
-.activities-page .main-nav a {
+/* .activities-page .main-nav a {
   color: #111 !important;
-}
+} */
 
 .contact-page .main-nav a {
   margin: 0 12px;
   font-size: 1.375rem;
-  color: #000 !important
+  /* color: #000 !important */
 }
 
 .conference-page .main-nav a {
-  color: #000 !important
+  /* color: #000 !important */
 }
 
 .lounge-page img,
@@ -1042,8 +1019,7 @@ h3 {
 }
 
 p,
-li,
-a {
+li {
   color: #fff
 }
 
@@ -1072,7 +1048,7 @@ a {
 
 main {
   border: none !important;
-  box-shadow: none !important
+  /* box-shadow: none !important */
 }
 
 .gallery {
@@ -1089,6 +1065,16 @@ main {
   min-width: 200px;
   max-width: 300px;
   aspect-ratio: 4 / 3;
+}
+
+.elephant-page .gallery a {
+  flex: 1 1 calc(48% - 14px);
+  max-width: 550px;
+}
+
+.lion-page .gallery a.featured-image {
+  flex: 1 1 100%;
+  max-width: 800px;
 }
 
 .gallery img {
@@ -1504,4 +1490,14 @@ label span[aria-hidden="true"] {
     animation: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Force all main navigation links to be black */
+.main-nav a, 
+.site-header .main-nav a, 
+header nav a, 
+.main-nav a:link, 
+.main-nav a:visited {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
 }
